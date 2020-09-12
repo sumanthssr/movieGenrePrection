@@ -37,4 +37,5 @@ merged_data_df = data[['movie_id','movie_name','plot_summary','genre']]
 merged_data_df['genre_new'] = merged_data_df['genre'].apply(lambda x: list(json.loads(x).values()))
 
 merged_data_df = merged_data_df[['movie_id','movie_name','plot_summary','genre_new']]
+print('data load finished !')
 
