@@ -17,8 +17,8 @@ def stemmer_stopwords_cleaner(plot_summary):
     return plot_summary
 
 
+print('Starting preprocessing text content !!')
 merged_data_df['plot_summary'] = merged_data_df['plot_summary'].apply(lambda x : stemmer_stopwords_cleaner(x))
-
 preprocessed_df = merged_data_df
-
+print('Finished processing text content !!')
 
